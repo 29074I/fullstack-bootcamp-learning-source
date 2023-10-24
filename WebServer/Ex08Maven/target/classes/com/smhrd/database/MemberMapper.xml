@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace : mapper - dao 매칭 -->
+<mapper namespace="MyMemberDAO">
+	<!-- id : 태그 식별 값 -->
+	<insert id="insert" parameterType="com.smhrd.model.MyMember">
+	<!-- sql문 뒤에 세미콜론 x -->
+		insert into mymember values (#{id},#{pw},#{nick})		
+	</insert>
+	<select id="login" parameterType="com.smhrd.model.MyMember" resultType="com.smhrd.model.MyMember">
+		select id, nick from mymember where id=#{id} and pw=#{pw}
+	</select>
+</mapper>
