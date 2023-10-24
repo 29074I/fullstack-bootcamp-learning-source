@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+    <style>
+        .parentDiv{
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+            padding: 50px;
+            margin: 10px;
+        }
+        .childDiv{
+            width: 100%;
+            height: 100%;
+            background-color: olive;
+        }
+    </style>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="childDiv"></div>
+    </div>
+
+    <script>
+        // 마우스 이벤트
+        // mouseover -> 마우스 올렸을 때, 자식 요소 포함(mouseout)
+        // mouseenter -> 마우스 올렸을 때, 자식 요소 제외(mouseleave)
+
+        $('.parentDiv').mouseover(()=>{console.log('mouseover 🥑');})
+                       .mouseenter(()=>{console.log('mouseenter 🍥');})
+    </script>
+</body>
+</html>

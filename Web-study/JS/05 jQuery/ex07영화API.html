@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie api</title>
+    <!-- jQuery 라이브러리 연결 -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <!-- ajax JS파일 연결 -->
+    <script defer src="./ex07영화APIajax.js"></script>
+</head>
+<body>
+    <!-- 영화 진흥위원회 API를 가져와서
+    일일 박스오피스 영화 TOP10의 
+    순위, 영화 이름, 개봉일 출력 -->
+    <button onclick="getAPI()">순위 보기 👀</button>
+    <br><br>
+
+    <!-- 출력될 공간 -->
+    <div class="container"></div>
+</body>
+</html>

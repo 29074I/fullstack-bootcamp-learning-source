@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback practice</title>
+</head>
+
+<body>
+    <button>Click!</button>
+    <br><br>
+    <!-- 시간 정보가 출력될 공간 -->
+    <div id="container"></div>
+
+
+    <script>
+        // HTML화면에 1초 ~ 10초까지 시간 정보가 출력
+        // 1. 공간 요소를 가져오기
+        let timeVal = document.querySelector('#container');
+
+        // 2. 타이머 만들기(1초 ~10초)
+        for(let i=1;i<=10;i++){
+        setTimeout(() => {
+            timeVal.innerHTML+=`${i}초<br>`;
+        }, i*1000)
+    }
+        // 버튼 클릭 시 'click' 메시지 출력
+        document.querySelector('button').addEventListener('click',()=>{
+                timeVal.innerHTML+='click<br>';
+        })
+    </script>
+</body>
+
+</html>

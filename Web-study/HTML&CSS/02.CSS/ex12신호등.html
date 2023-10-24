@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 120px;
+            height: 360px;
+            background-color: black;
+            border-radius: 20px;
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+
+        div>.circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        #circle1 {
+            background-color: red;
+        }
+
+        #circle2 {
+            background-color: yellow;
+        }
+
+        #circle3 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1. 검정색 div (black)
+        - height : 360px ,width : 120px, 
+        2. 삼색등 div(red, yellow, green)
+        - width : 100px, height : 100px 
+        ** margin에는 중첩현상
+        ** padding을 이용하면 크기가 커짐 그러나 우리는 크기변화x
+        ** 검정색 div안에다가 자식요소로 삼색div를 넣어야 한다.
+    -->
+
+    <!-- 검정색 div -->
+    <div id="box">
+        <!-- 삼색등 div -->
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+    </div>
+</body>
+
+</html>
