@@ -1,0 +1,18 @@
+.out{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    box-shadow: 3px 3px 3px 3px rgb(221, 221, 221);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+#name{
+    border-radius: 30px;
+    border: 1px groove rgb(182, 150, 255);
+    padding: 5px;
+}
